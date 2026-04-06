@@ -1,0 +1,64 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "User Profile",
+      "description": "Stores user information and recovery stats.",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string" },
+        "photoURL": { "type": "string" },
+        "role": { "type": "string", "enum": ["patient", "caregiver"] },
+        "streak": { "type": "number" },
+        "lastActive": { "type": "string", "format": "date-time" },
+        "recoveryScore": { "type": "number" },
+        "caregiverUid": { "type": "string" }
+      },
+      "required": ["uid", "email", "displayName", "role"]
+    },
+    "Task": {
+      "title": "Task",
+      "description": "A medicine or exercise task for a patient.",
+      "type": "object",
+      "properties": {
+        "patientUid": { "type": "string" },
+        "type": { "type": "string", "enum": ["medicine", "exercise"] },
+        "name": { "type": "string" },
+        "scheduledTime": { "type": "string", "format": "date-time" },
+        "completed": { "type": "boolean" },
+        "completedAt": { "type": "string", "format": "date-time" },
+        "verificationType": { "type": "string", "enum": ["hold", "camera"] },
+        "status": { "type": "string", "enum": ["pending", "completed", "missed"] }
+      },
+      "required": ["patientUid", "type", "name", "scheduledTime", "completed"]
+    },
+    "PainLog": {
+      "title": "Pain Log",
+      "description": "A log of pain intensity and location.",
+      "type": "object",
+      "properties": {
+        "patientUid": { "type": "string" },
+        "date": { "type": "string", "format": "date-time" },
+        "intensity": { "type": "number" },
+        "location": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "required": ["patientUid", "date", "intensity", "location"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "UserProfile",
+      "description": "User profile collection."
+    },
+    "/tasks/{taskId}": {
+      "schema": "Task",
+      "description": "Tasks collection."
+    },
+    "/painLogs/{logId}": {
+      "schema": "PainLog",
+      "description": "Pain logs collection."
+    }
+  }
+}

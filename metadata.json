@@ -1,0 +1,5 @@
+{
+  "name": "RecoverX",
+  "description": "AI-powered rehabilitation and medication adherence assistant with prescription parsing, smart reminders, and caregiver insights.",
+  "requestFramePermissions": ["camera", "microphone", "geolocation"]
+}
