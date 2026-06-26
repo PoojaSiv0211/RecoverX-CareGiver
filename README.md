@@ -1,42 +1,27 @@
+<h1 align="center">RecoverX</h1>
 
+<p align="center">
+  <b>AI-Powered Healthcare & Recovery Management Platform</b>
+</p>
 
-RecoverX is an AI-powered rehabilitation assistant that helps patients follow prescriptions, track recovery, and stay consistent with medication and exercise routines.
+<p align="center">
+Helping patients and caregivers manage rehabilitation through AI-generated recovery plans, medication reminders, prescription analysis, progress tracking, multilingual voice navigation, and recovery insights.
+</p>
 
----
-
-## 🚀 Features
-
-- 📄 AI Prescription Parsing (handwritten + printed)
-- 💊 Automatic Task Generation (meds + exercises)
-- 🔔 Smart Notifications & Reminders
-- 📊 Recovery Reports & Adherence Tracking
-- 🧍 Pain Heatmap Logging
-- 🤖 AI-based recovery guidance
-
----
-
-## 💡 Problem Solved
-
-Patients often fail to follow rehabilitation plans due to:
-- Forgetfulness
-- Lack of guidance
-- No tracking system
-
-RecoverX ensures better recovery through automation + AI.
+<p align="center">
+<img src="images/hero.png" width="900"/>
+</p>
 
 ---
 
-## 🛠 Tech Stack
+## Features
 
-- Frontend: React + Vite
-- Storage: LocalStorage (demo-ready)
-- AI: Google Gemini API
-- Auth: Firebase (optional)
-
----
-
-## ▶️ Run Locally
-
-```bash
-npm install
-npm run dev
+- AI Prescription Analysis
+- Personalized Recovery Plans
+- Medication & Exercise Scheduling
+- Recovery Progress Dashboard
+- Pain Mapping
+- Weekly Reports
+- Caregiver Portal
+- Multilingual Voice Navigation
+- Google Authentication
