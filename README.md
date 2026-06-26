@@ -92,8 +92,11 @@ flowchart TD
 ```
 
 ## Project Structure
+
+```text
 recover-x-caregiver/
 ├── src/
+├── images/
 ├── index.html
 ├── server.ts
 ├── package.json
@@ -104,28 +107,44 @@ recover-x-caregiver/
 ├── .env.example
 ├── .gitignore
 └── README.md
+```
 
-## HOW TO USE RECOVER-X-CAREGIVER
-1. Clone the repository
+---
+
+## Getting Started
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/PoojaSiv0211/RecoverX-CareGiver.git
 cd RecoverX-CareGiver
-2. Install dependencies
+```
+
+### 2. Install dependencies
+
+```bash
 npm install
-3. Add environment variables
+```
 
-Create a .env file in the root folder:
+### 3. Add environment variables
 
+Create a `.env` file in the root folder:
+
+```env
 GEMINI_API_KEY=your_gemini_api_key_here
-4. Run the project
+```
+
+### 4. Run the project
+
+```bash
 npm run dev
+```
 
 Open the app at:
 
+```text
 http://localhost:3000
-
-## Portfolio Value
-
-RecoverX Caregiver demonstrates product thinking across healthcare AI, frontend engineering, AI-assisted workflows, and dashboard design. It is built as a polished portfolio project to show how AI can support structured recovery monitoring and caregiver decision-making.
+```
 
 ## Disclaimer
 
@@ -134,4 +153,5 @@ This project is a portfolio prototype using demo clinical data. It is not a medi
 ## Author
 
 Pooja S
+
 AI & Data Science Undergraduate
