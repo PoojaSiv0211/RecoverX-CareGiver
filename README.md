@@ -1,20 +1,140 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# RecoverX Caregiver
 
-# Run and deploy your AI Studio app
+AI-powered caregiver dashboard for rehabilitation monitoring, clinical reports, medication tracking, patient alerts, and Gemini-powered recovery insights.
 
-This contains everything you need to run your app locally.
+RecoverX Caregiver is a clinical-style web dashboard designed for nurses, in-home caregivers, and rehabilitation coordinators to monitor outpatient recovery progress from one workspace.
 
-View your app in AI Studio: https://ai.studio/apps/b210ca14-55bd-4715-be58-21384819d968
+### Landing Page
+![RecoverX Caregiver Landing Page](images/hero.png)
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Overview
 
+RecoverX Caregiver helps caregivers track patient recovery after surgery or rehabilitation by combining structured health data, weekly reports, alerts, treatment tasks, and AI-generated care insights.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+The platform focuses on:
+
+- Patient recovery monitoring
+- Medication and treatment adherence
+- Weekly rehabilitation reports
+- AI clinical summaries
+- Caregiver alert workflows
+- Mobile caregiver simulation
+
+---
+
+## Problem
+
+Caregivers often manage recovery updates across disconnected notes, medication logs, appointments, and patient communication. This makes it difficult to quickly understand whether a patient is improving, missing medication, or showing early signs of risk.
+
+---
+
+## Solution
+
+RecoverX Caregiver provides a centralized dashboard where caregivers can view patient status, track rehabilitation progress, review weekly metrics, respond to alerts, and use Gemini-powered insights to support care decisions.
+
+---
+
+## Key Features
+
+- Care dashboard for active outpatient monitoring
+- Patient recovery score, heart rate, pain index, and therapy adherence tracking
+- Medication protocol and treatment plan management
+- Weekly rehabilitation reports with clinical-style metrics
+- Gemini AI care insights and recovery summaries
+- Alert center for missed medication, critical updates, and AI suggestions
+- Interactive mobile simulator for caregiver-side patient monitoring
+- System settings for caregiver profile, preferences, and notification configuration
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Frontend | React, TypeScript |
+| Build Tool | Vite |
+| Backend Runtime | Node.js, TSX |
+| AI Integration | Gemini API |
+| Styling | CSS / responsive UI components |
+| Development | Google AI Studio, GitHub |
+
+---
+## Screenshots
+
+### Care Dashboard
+![RecoverX Caregiver Dashboard](images/dashboard.png)
+
+### Weekly Reports
+![RecoverX Caregiver Weekly Reports](images/weekly-report.png)
+
+### Alert Center
+![RecoverX Caregiver Alert Center](images/alert-center.png)
+
+### System Settings
+![RecoverX Caregiver Settings](images/settings.png)
+
+### Mobile Simulator
+![RecoverX Caregiver Mobile Simulator](images/mobile-simulator.png)
+
+## Architecture
+
+```mermaid
+flowchart TD
+    A[Caregiver Dashboard] --> B[Patient Monitoring]
+    A --> C[Weekly Reports]
+    A --> D[Alert Center]
+    A --> E[Mobile Simulator]
+    B --> F[Recovery Metrics]
+    C --> G[Gemini AI Summary]
+    D --> H[Care Recommendations]
+
+<img width="325" height="443" alt="image" src="https://github.com/user-attachments/assets/22640d64-4174-49e9-9e8b-3a2706c88322" />
+```
+
+## Project Structure
+recover-x-caregiver/
+├── src/
+├── index.html
+├── server.ts
+├── package.json
+├── package-lock.json
+├── vite.config.ts
+├── tsconfig.json
+├── metadata.json
+├── .env.example
+├── .gitignore
+└── README.md
+
+## HOW TO USE RECOVER-X-CAREGIVER
+1. Clone the repository
+git clone https://github.com/PoojaSiv0211/RecoverX-CareGiver.git
+cd RecoverX-CareGiver
+2. Install dependencies
+npm install
+3. Add environment variables
+
+Create a .env file in the root folder:
+
+GEMINI_API_KEY=your_gemini_api_key_here
+4. Run the project
+npm run dev
+
+Open the app at:
+
+http://localhost:3000
+
+## Portfolio Value
+
+RecoverX Caregiver demonstrates product thinking across healthcare AI, frontend engineering, AI-assisted workflows, and dashboard design. It is built as a polished portfolio project to show how AI can support structured recovery monitoring and caregiver decision-making.
+
+## Disclaimer
+
+This project is a portfolio prototype using demo clinical data. It is not a medical device and should not be used for real diagnosis, treatment, or emergency care.
+
+## Author
+
+## Pooja S
+AI & Data Science Undergraduate
+Building AI products across healthcare, knowledge intelligence, data analytics, and multi-agent systems.
