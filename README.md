@@ -89,8 +89,6 @@ flowchart TD
     B --> F[Recovery Metrics]
     C --> G[Gemini AI Summary]
     D --> H[Care Recommendations]
-
-<img width="325" height="443" alt="image" src="https://github.com/user-attachments/assets/22640d64-4174-49e9-9e8b-3a2706c88322" />
 ```
 
 ## Project Structure
