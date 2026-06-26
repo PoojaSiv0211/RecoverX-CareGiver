@@ -145,7 +145,6 @@ Open the app at:
 ```text
 http://localhost:3000
 ```
-
 ## Disclaimer
 
 This project is a portfolio prototype using demo clinical data. It is not a medical device and should not be used for real diagnosis, treatment, or emergency care.
