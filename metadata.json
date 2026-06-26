@@ -1,0 +1,6 @@
+{
+  "name": "RecoverX Caregiver",
+  "description": "AI-powered caregiver platform for rehabilitation monitoring and patient recovery tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
