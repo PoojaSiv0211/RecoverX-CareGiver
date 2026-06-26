@@ -133,6 +133,5 @@ This project is a portfolio prototype using demo clinical data. It is not a medi
 
 ## Author
 
-## Pooja S
+Pooja S
 AI & Data Science Undergraduate
-Building AI products across healthcare, knowledge intelligence, data analytics, and multi-agent systems.
